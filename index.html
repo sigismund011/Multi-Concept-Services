@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Concept Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Multi Concept Services</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="card-container">
+        <section id="home" class="card">
+            <h2>Welcome to Multi Concept Services</h2>
+            <p>Your trusted partner in civil engineering solutions.</p>
+        </section>
+
+        <div class="round-card-container">
+            <div class="round-card" onclick="showInfo('about')">
+                <h2>About Us</h2>
+            </div>
+
+            <div class="round-card" onclick="showInfo('services')">
+                <h2>Our Services</h2>
+            </div>
+
+            <div class="round-card" onclick="showInfo('projects')">
+                <h2>Our Projects</h2>
+            </div>
+
+            <div class="round-card" onclick="showInfo('contact')">
+                <h2>Contact Us</h2>
+            </div>
+        </div>
+
+        <div id="info-box" class="info-box">
+            <span class="close" onclick="closeInfo()">&times;</span>
+            <h2 id="info-title"></h2>
+            <p id="info-content"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Multi Concept Services. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
